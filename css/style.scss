@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+nav .container-fluid {
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
+nav .container-fluid .navbar-brand {
+  font-size: 2rem;
+}
+
+nav .container-fluid a:hover {
+  color: white;
+}
+
+nav .container-fluid a img {
+  height: 5rem;
+  width: 100%;
+}
+
+nav .container-fluid .collapse {
+  justify-content: end;
+}
+
+nav .container-fluid .collapse ul li a {
+  font-weight: bolder;
+}
+
+nav .container-fluid .collapse ul li a:hover {
+  color: red;
+}
+
+nav .container-fluid .collapse .dropdown-menu li a {
+  color: #fff;
+}
+
+.carousel {
+  .carousel-item {
+    height: 85vh;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.latest {
+  background-color: #fff9ef;
+  padding: 3rem;
+
+  .container {
+    .about {
+      h2 {
+        font-weight: bolder;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 2rem;
+      }
+    }
+
+    .lat_ann {
+      background-color: #fff;
+      border: 2px solid black;
+
+      .announcement {
+        text-align: center;
+        background-image: linear-gradient(to right, red, yellow);
+        margin: 1rem 0 1rem 0;
+
+        h3 {
+          font-weight: bolder;
+        }
+      }
+
+      .calendar {
+        background-color: #fff9ef;
+        text-align: center;
+        padding: 1rem;
+
+        i {
+          font-size: 2rem;
+        }
+      }
+
+      h5 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.courses {
+  margin-top: 4rem;
+
+  h1 {
+    text-align: center;
+
+    span {
+      font-weight: bolder;
+    }
+  }
+
+  .row {
+    .card {
+      cursor: pointer;
+      border: none;
+
+      img {
+        height: 12rem;
+      }
+
+      .card-body {
+        padding: 0;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.india {
+  margin-top: 4rem;
+  background-color: #fff9ef;
+  padding: 2rem 0 2rem 0;
+
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.book {
+  background-image: url(/img/bookcounc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+  margin-top: 4rem;
+
+  .container {
+    width: 100%;
+    max-width: 1070px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    a {
+      display: inline-block;
+      width: auto;
+      padding: 15px 80px;
+      border-radius: 8px;
+      font-size: 24px;
+      line-height: 30px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      font-weight: 600;
+      letter-spacing: 1px;
+      background: linear-gradient(to bottom, #0e4094 0%, #709cf3 100%);
+      text-decoration: none;
+    }
+  }
+
+}
+
+// .story {
+//   margin-top: 4rem;
+
+//   h1 {
+//     font-weight: bolder;
+//     text-align: center;
+//   }
+
+//   img {
+//     width: 100%;
+//   }
+// }
+
+
+
+.exper {
+  background-color: #fff9ef;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  margin-top: 4rem;
+
+  h1{
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  // overflow: scroll;
+  .img1 {
+    position: absolute;
+    bottom: 3%;
+    right: 84%;
+  }
+
+  .img2 {
+    position: absolute;
+    bottom: 30%;
+    left: 84%;
+  }
+
+  .dot {
+
+    .card {
+      margin-top: 4rem;
+    }
+
+
+  }
+}
+
+.we{
+  text-align: center;
+  margin-top: 4rem;
+  h1{
+    font-weight: bolder;
+  }
+  h5{
+    font-weight: bold;
+  }
+}
+
+
+
+
+.pride {
+  margin-top: 4rem;
+  background-color: #fff9ef;
+  padding: 2rem 0 2rem 0;
+  h1 {
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.card-slider {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  .slick-prev-icon,
+  .slick-next-icon {
+    color: black;
+  }
+
+  .slick-slide {
+    padding: 0 10px;
+  }
+
+  .card {
+    position: relative;
+
+    display: flex !important;
+    flex-direction: column;
+    // height: 250px;
+
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: white;
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, .9);
+
+    transition: all .1s linear;
+
+    @media screen and (max-width: 600px) {
+      height: auto;
+    }
+  }
+
+  /** Main link */
+  .card .main-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .main-link:focus {
+    outline: none;
+  }
+
+  .card .main-link:focus .title {
+    outline: 3px dashed orange;
+    outline-offset: -4px;
+    color: royalblue;
+    text-decoration: underline;
+  }
+
+  /** Product title */
+  .card .title {
+    color: #000;
+    margin: 0;
+    padding: 10px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /** Product image */
+  .card .image {
+    /** Visually place the image above all other content (like the heading) in the parent flex container (.card). */
+    order: -1;
+
+    position: relative;
+    // height: 100px;
+    padding: 2px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(.5);
+    transition: all .3s ease-in-out;
+  }
+
+
+  /** Product description */
+  .card .description {
+    margin-left: 10px;
+    font-size: 14px;
+    opacity: .8;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  /** Floating "sale" badge */
+  .card .badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 1;
+
+    padding: 5px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(200, 0, 0);
+  }
+
+  /** Price */
+  .card .price {
+    padding-left: 10px;
+  }
+
+  .card .price .new-price {
+    font-weight: bold;
+  }
+
+  .card .price .original-price {
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: .5;
+    text-decoration: line-through;
+  }
+
+  /** Rating */
+  .card .rating {
+    margin: 10px 0 15px 10px;
+    color: orange;
+    font-size: 12px;
+  }
+
+  /** "30 reviews" link next to stars */
+  .card .rating .reviews-link {
+    color: rgba(0, 0, 0, .6);
+    margin-left: 5px;
+  }
+
+  .card .rating .reviews-link:hover {
+    color: black;
+  }
+
+  .card .rating .reviews-link:focus {
+    color: royalblue;
+    outline: 3px dotted royalblue;
+    outline-offset: 2px;
+  }
+
+  /** Hover state = add box shadow, underline the title */
+  .card:hover {
+    border-color: rgba(0, 0, 0, .4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+  }
+
+  .card:hover .image img,
+  .card:focus .image img {
+    filter: grayscale(0);
+  }
+
+  .card a:focus {
+    outline: none;
+  }
+}
+
+
+/**
+  Demo only
+*/
+.note {
+  text-align: center;
+  font-size: 14px;
+  max-width: 960px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  opacity: .8;
+
+  a {
+    color: black;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: royalblue;
+    }
+  }
+}
+
+
+.feed{
+  margin-top: 4rem;
+  h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  h1{
+    text-align: center;
+    font-weight: bolder;
+    line-height: 0.8;
+    font-size: 14rem;
+  }
+  .card{
+    padding: 1rem;
+    border: 7px double;
+  }
+}
+
+footer{
+  margin-top: 4rem;
+  background-image: url(/img/footer.png);
+  background-color: #fff9ef;
+
+  .row{
+    padding: 2rem;
+    
+    i{
+      margin-left: 10px;
+      font-size: 1.3rem;
+    }
+  }
+
+}
+
+
+
+@media (max-width:1100px){
+.exper{
+  .img2, .img1{
+    display: none;
+  }
+  .dot{
+    overflow: scroll;
+
+    .card1{
+      min-width: 300px;
+    }
+    
+    .card2{
+      min-width: 300px;
+      margin-left: 15rem;
+    }
+    .card3{
+      min-width: 300px;
+      margin-left: 30rem;
+    }
+    .card4{
+      min-width: 300px;
+      margin-left: 45rem;
+    }
+  }
+}
+}
